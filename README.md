@@ -1,0 +1,2 @@
+# GANDZAR-X-YUHU-BERHASIL-UYYY
+Anjaaaay
