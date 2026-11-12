@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fbf7f1;color:#292426;font-family:'DM Sans',sans-serif}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+::selection{background:#efd5d4;color:#292426}
+.serif{font-family:'Playfair Display',serif}
+.soft-card{background:rgba(255,255,255,.82);border:1px solid rgba(215,190,177,.55);box-shadow:0 18px 55px rgba(92,63,63,.07);backdrop-filter:blur(14px)}
+.btn-primary{background:#292426;color:white;border:1px solid #292426;transition:.2s}
+.btn-primary:hover{background:#514347;transform:translateY(-1px)}
+.btn-soft{background:#f5e4e3;color:#654d50;border:1px solid #ebd3d1;transition:.2s}
+.btn-soft:hover{background:#eed8d7;transform:translateY(-1px)}
+.float{animation:float 5s ease-in-out infinite}
+.float-delay{animation:float 6s ease-in-out 1.2s infinite}
+.drift{animation:drift 18s linear infinite}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-12px) rotate(3deg)}}
+@keyframes drift{0%{transform:translate3d(0,0,0) rotate(0)}50%{transform:translate3d(18px,-24px,0) rotate(12deg)}100%{transform:translate3d(0,0,0) rotate(0)}}
+@keyframes shimmer{0%{background-position:0%}100%{background-position:200%}}
+.shimmer{background:linear-gradient(90deg,#f6e5e3,#fff,#ead7b7,#f6e5e3);background-size:200% auto;animation:shimmer 6s linear infinite}
+input:focus,select:focus,textarea:focus{outline:2px solid #d8b7b5;outline-offset:2px}
+.progress{background:linear-gradient(90deg,#d5b6b3,#c8a96b)}
+
+.field { width: 100%; border: 1px solid #eadbd4; border-radius: 14px; background: rgba(255,255,255,.9); padding: 12px 15px; font-size: 14px; color: #292326; outline: none; }
+.field:focus { border-color: #bd9298; box-shadow: 0 0 0 3px rgba(189,146,152,.12); }
